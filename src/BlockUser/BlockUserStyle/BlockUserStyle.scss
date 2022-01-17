@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.BlockUser {
+    min-width: 200px;
+    max-width: 200px;
+    background: rgb(160, 221, 240);
+    overflow-y: scroll;
+    height: calc(100vh - 160px);
+}
+.user {
+    
+    background: rgba(71, 119, 128, 0.828);
+    border-radius: 15px;
+    width: 150px;
+    height: 50px;
+    display: inline-flex;
+    font-family: 'Lobster', cursive;
+    color: rgba(255, 255, 255, 0.86);
+    opacity: 1;
+    &:hover {
+        background: rgba(71, 119, 128, 0.95);
+    }
+    img {
+        margin-top: 3px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    p {
+        margin-left: 13px;
+    }
+}

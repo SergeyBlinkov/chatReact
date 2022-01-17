@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+.BlockChat {
+    width: 100%;
+    
+    background: rgb(68, 130, 149);
+    min-height: calc(100vh - 160px);
+    .BlockChat__area {
+        height: calc(100vh - 170px);
+        margin: 5px 5px 5px 5px;
+        background: #ade7e581;
+        
+        overflow-y: scroll;
+        border-radius: 15px;
+        
+        
+        .BlockChat__message {
+            display: flex;
+            flex-direction: row;
+            height: 80px;
+            align-items: center;
+            margin-left: 8px;
+            font-family: 'Lobster', cursive;
+            
+        }   
+        .chat__me {
+            display: flex;
+            flex-direction: row-reverse;
+            
+            height: 80px;
+            align-items: center;
+            margin-right: 8px;
+            font-family: 'Lobster', cursive;
+            .user__message {
+                margin-right: 15px;
+            }
+           
+        } 
+}
+}
+.user__message {
+    margin-left: 15px;
+    opacity: 1;
+}
+
+    

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+.Footer {
+  height: 100px;
+  width: 100%;
+  background: #82c4df;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Footer button {
+  width: 150px;
+  height: 65px;
+  background: rgba(71, 119, 128, 0.828);
+  border-radius: 15px;
+  border: 0px;
+  color: #fff;
+  font-family: 'Lobster', cursive;
+  font-size: 15px;
+}
+
+.Footer button:hover {
+  background: rgba(71, 119, 128, 0.95);
+}
+
+.Footer button:active {
+  opacity: .86;
+}
+
+.Footer .Footer__input {
+  width: 500px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Footer .Footer__input input {
+  width: 350px;
+  height: 30px;
+  border-radius: 15px;
+  border: 0px;
+}
+
+.Footer .Footer__input input:focus {
+  border: 0px;
+  outline: none;
+}
+
+.Footer .Footer__input button {
+  width: 100px;
+  height: 30px;
+}
+
+.Footer .Footer__input img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=FooterStyle.css.map */
