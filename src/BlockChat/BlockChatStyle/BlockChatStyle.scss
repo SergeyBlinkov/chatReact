@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-
+@keyframes newMess {
+    0% {display: none;}
+    100% {display: flex;}
+    
+}
 
 .BlockChat {
     width: 100%;
@@ -23,7 +27,6 @@
             align-items: center;
             margin-left: 8px;
             font-family: 'Lobster', cursive;
-            
         }   
         .chat__me {
             display: flex;

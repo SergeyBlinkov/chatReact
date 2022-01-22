@@ -1,57 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+@keyframes openRight {
+    0% {width: 45px; ;}
+    100% {width:150px ;}
+}
+@keyframes closeRight {
+    0% {width: 150px; ;}
+    100% {width:45px ;}
+}
+
+
+
 .Footer {
     height: 100px;
     width: 100%;
     background: rgb(130, 196, 223);
     display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
-button {
-    width: 150px;
-    height: 65px;
-    background: rgba(71, 119, 128, 0.828);
-    border-radius: 15px;
-    border: 0px;
-    color: #fff;
-    font-family: 'Lobster', cursive;
-    font-size: 15px;
-    &:hover {
-        background: rgba(71, 119, 128, 0.95);
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    button {
+        cursor: pointer;
+        width: 150px;
+        height: 65px;
+        background: rgba(71, 119, 128, 0.828);
+        border-radius: 15px;
+        border: 0px;
+        color: #fff;
+        font-family: 'Lobster', cursive;
+        font-size: 15px;
+
+        &:hover {
+            background: rgba(71, 119, 128, 0.95);
+        }
+
+        &:active {
+            opacity: .86;
+        }
     }
-    &:active {
-        opacity: .86;
-    }
-}
+
     .Footer__input {
         width: 500px;
-        height: 25px;
+        height: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+
         input {
             width: 350px;
             height: 30px;
             border-radius: 15px;
             border: 0px;
+
             &:focus {
                 border: 0px;
                 outline: none;
             }
         }
+
         button {
             width: 100px;
             height: 30px;
+            cursor: pointer;
         }
+
         img {
+
+
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+
+        }
+
+        #errs {
             
-                
-                width: 45px;
-                height: 45px;
-                border-radius: 50%;
+            background: #ffe0e0;
+            color: #ba3939;
+            animation:error 2s ease;
+            margin-left: 8px;
             
+            
+           
         }
     }
+    .myIcon {
+       height: 45px;
+       align-items: center;
+       border-radius: 30px;
+       transition: all;
+       animation: openRight backwards 1s ease 1;  
+       
+       
+    }
+   
 }

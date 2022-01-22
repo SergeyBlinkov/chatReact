@@ -1,4 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@-webkit-keyframes openRight {
+  0% {
+    width: 45px;
+  }
+  100% {
+    width: 150px;
+  }
+}
+@keyframes openRight {
+  0% {
+    width: 45px;
+  }
+  100% {
+    width: 150px;
+  }
+}
+
+@-webkit-keyframes closeRight {
+  0% {
+    width: 150px;
+  }
+  100% {
+    width: 45px;
+  }
+}
+
+@keyframes closeRight {
+  0% {
+    width: 150px;
+  }
+  100% {
+    width: 45px;
+  }
+}
+
 .Footer {
   height: 100px;
   width: 100%;
@@ -18,6 +53,7 @@
 }
 
 .Footer button {
+  cursor: pointer;
   width: 150px;
   height: 65px;
   background: rgba(71, 119, 128, 0.828);
@@ -38,7 +74,7 @@
 
 .Footer .Footer__input {
   width: 500px;
-  height: 25px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,11 +104,32 @@
 .Footer .Footer__input button {
   width: 100px;
   height: 30px;
+  cursor: pointer;
 }
 
 .Footer .Footer__input img {
   width: 45px;
   height: 45px;
   border-radius: 50%;
+}
+
+.Footer .Footer__input #errs {
+  background: #ffe0e0;
+  color: #ba3939;
+  -webkit-animation: error 2s ease;
+          animation: error 2s ease;
+  margin-left: 8px;
+}
+
+.Footer .myIcon {
+  height: 45px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 30px;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-animation: openRight backwards 1s ease 1;
+          animation: openRight backwards 1s ease 1;
 }
 /*# sourceMappingURL=FooterStyle.css.map */
