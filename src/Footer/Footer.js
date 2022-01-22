@@ -37,8 +37,8 @@ export default function Footer (  ){
            }
            
         }}>send</button>
-        {inptValue.length < 1 ? <img src={manI} alt="i'm" /> : <div className='user myIcon'><img src={manI} alt="i'm" />
-        <p>...</p></div> }
+        {inptValue.length < 1 ? <img src={manI} alt="i'm" /> : <div className='myIcon'><img src={manI} alt="i'm" />
+        <div className='whiteBl'></div></div> }
         <p id='errs' ></p>
     </div>
     

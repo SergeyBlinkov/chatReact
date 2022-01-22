@@ -4,7 +4,7 @@
     width: 45px;
   }
   100% {
-    width: 150px;
+    width: 80px;
   }
 }
 @keyframes openRight {
@@ -12,25 +12,37 @@
     width: 45px;
   }
   100% {
-    width: 150px;
+    width: 80px;
   }
 }
 
-@-webkit-keyframes closeRight {
+@-webkit-keyframes whiteBlAnim {
   0% {
-    width: 150px;
+    margin-left: 5px;
+  }
+  50% {
+    border-radius: 0px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    background: lightblue;
   }
   100% {
-    width: 45px;
+    margin-left: 20px;
   }
 }
 
-@keyframes closeRight {
+@keyframes whiteBlAnim {
   0% {
-    width: 150px;
+    margin-left: 5px;
+  }
+  50% {
+    border-radius: 0px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    background: lightblue;
   }
   100% {
-    width: 45px;
+    margin-left: 20px;
   }
 }
 
@@ -73,7 +85,7 @@
 }
 
 .Footer .Footer__input {
-  width: 500px;
+  width: 400px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,7 +102,8 @@
 }
 
 .Footer .Footer__input input {
-  width: 350px;
+  min-width: 50px;
+  padding-left: 5px;
   height: 30px;
   border-radius: 15px;
   border: 0px;
@@ -126,10 +139,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-radius: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-transition: all;
   transition: all;
   -webkit-animation: openRight backwards 1s ease 1;
           animation: openRight backwards 1s ease 1;
+  background: rgba(71, 119, 128, 0.828);
+  border-radius: 30px;
+  width: 80px;
+}
+
+.Footer .myIcon .whiteBl {
+  background: #fff;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-left: 5px;
+  -webkit-animation: whiteBlAnim 1.5s linear alternate infinite;
+          animation: whiteBlAnim 1.5s linear alternate infinite;
 }
 /*# sourceMappingURL=FooterStyle.css.map */
